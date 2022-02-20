@@ -79,16 +79,14 @@ zinit wait lucid for \
 	OMZL::key-bindings.zsh \
     OMZL::misc.zsh \
 	OMZL::spectrum.zsh \
-	OMZL::termsupport.zsh
-	# OMZP::git \
-	# OMZP::fzf \
-    # atload"
-    #     alias dcupb='docker-compose up --build'
-    # " \
-	# OMZP::docker-compose \
-	# as"completion" \
-    # OMZP::docker/_docker \
-    # djui/alias-tips
+	OMZL::termsupport.zsh \
+    OMZP::aliases \
+    OMZP::command-not-found \
+    OMZP::dirhistory \
+    OMZP::git \
+    OMZP::rust \
+    OMZP::sudo \
+    djui/alias-tips
 
 # Load important plugins
 zinit wait lucid light-mode for \
