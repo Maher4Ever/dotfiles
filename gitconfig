@@ -19,3 +19,5 @@
 
 [delta]
     features = side-by-side line-numbers navigate
+[credential]
+	helper = store
