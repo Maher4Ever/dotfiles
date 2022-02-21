@@ -19,4 +19,4 @@ Terminal setup
 ### Windows Terminal
 
 - Font: [Inconsolata Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Inconsolata.zip)
-- Color Theme: [MaterialOcean](https://windowsterminalthemes.dev/?theme=MaterialOcean)
+- Color Theme: [Dracula](https://windowsterminalthemes.dev/?theme=Dracula)
