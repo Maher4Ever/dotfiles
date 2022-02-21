@@ -102,7 +102,7 @@ zstyle ':completion:*:functions' ignored-patterns '(_*|pre(cmd|exec))'
 zstyle ':completion:*' rehash true
 
 # History.
-HISTFILE="${ZDOTDIR:-$HOME}/.zhistory"
+HISTFILE="${ZDOTDIR:-$HOME}/.zsh_history"
 HISTSIZE=100000
 SAVEHIST=5000
 setopt appendhistory notify
