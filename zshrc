@@ -72,7 +72,6 @@ setopt correct                  # Turn On Corrections
 # Completion Options.
 setopt complete_in_word         # Complete From Both Ends Of A Word.
 setopt always_to_end            # Move Cursor To The End Of A Completed Word.
-setopt path_dirs                # Perform Path Search Even On Command Names With Slashes.
 setopt auto_menu                # Show Completion Menu On A Successive Tab Press.
 setopt auto_list                # Automatically List Choices On Ambiguous Completion.
 setopt auto_param_slash         # If Completed Parameter Is A Directory, Add A Trailing Slash.
