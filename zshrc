@@ -213,6 +213,7 @@ zinit wait lucid for \
   OMZP::git \
   OMZP::git-extras \
   OMZP::rust \
+  OMZP::ssh-agent \
   OMZP::sudo \
   djui/alias-tips
 
