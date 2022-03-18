@@ -1,15 +1,11 @@
 [user]
 	name = Maher Sallam
 	email = msallam@rocsys.com
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-
 [core]
     pager = delta
+	editor = code --wait
+[credential]
+	helper = store
 [interactive]
     diffFilter = delta --color-only
 [merge]
@@ -19,5 +15,4 @@
 
 [delta]
     features = side-by-side line-numbers navigate
-[credential]
-	helper = store
+
