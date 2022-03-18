@@ -279,7 +279,8 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
          alias la='ls -abghilmu'
          alias ll='ls -al'
          alias tree='exa --tree'" \
-    ogham/exa
+    ogham/exa \
+  sbin'*/balena -> balena' balena-io/balena-cli
 
 # - - - - - - - - - - - - - - - - - - - -
 # Git extensions
@@ -295,7 +296,7 @@ zinit as"null" wait"3" lucid for \
       tj/git-extras
 
 # - - - - - - - - - - - - - - - - - - - -
-# Managers 
+# Managers
 # - - - - - - - - - - - - - - - - - - - -
 
 # pyenv
