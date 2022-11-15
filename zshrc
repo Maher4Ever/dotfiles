@@ -309,6 +309,15 @@ zinit ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init --path > zpyenv.zsh
     as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
 zinit light pyenv/pyenv
 
+# nvm
+zinit ice atinit'\
+    export NVM_SYMLINK_CURRENT="true"
+    export NVM_DIR="$HOME/.nvm"
+    export NVM_LAZY_LOAD=true
+    export NVM_COMPLETION=true
+    '
+zinit light lukechilds/zsh-nvm
+
 # - - - - - - - - - - - - - - - - - - - -
 # End Profiling Script
 # - - - - - - - - - - - - - - - - - - - -
