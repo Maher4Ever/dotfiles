@@ -261,8 +261,9 @@ zinit wait'1a' depth'1' lucid from"gh-r" as'program' for \
 
 zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
   mv'bat* bat'             sbin'**/bat -> bat'          \
-  atload'export BAT_THEME="Dracula"' \
-    @sharkdp/bat       \
+    atload'export BAT_THEME="Dracula"
+           alias cat=bat' \
+    @sharkdp/bat        \
   mv'fd* fd'               sbin'**/fd -> fd'               @sharkdp/fd        \
   mv'hyperfine* hyperfine' sbin'**/hyperfine -> hyperfine' @sharkdp/hyperfine \
   mv'rip* ripgrep'         sbin'**/rg -> rg'  \
