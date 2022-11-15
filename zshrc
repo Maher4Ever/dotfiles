@@ -265,7 +265,9 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
     @sharkdp/bat       \
   mv'fd* fd'               sbin'**/fd -> fd'               @sharkdp/fd        \
   mv'hyperfine* hyperfine' sbin'**/hyperfine -> hyperfine' @sharkdp/hyperfine \
-  mv'rip* ripgrep'         sbin'**/rg -> rg'               BurntSushi/ripgrep \
+  mv'rip* ripgrep'         sbin'**/rg -> rg'  \
+    atclone'cp -vf complete/_rg _rg'  \
+    BurntSushi/ripgrep \
   mv'nvim* nvim'           sbin"**/bin/nvim -> nvim"       bpick"${bpick}"    \
   atload'export EDITOR="nvim"
          alias v="${EDITOR}"
