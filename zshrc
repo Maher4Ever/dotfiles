@@ -277,7 +277,7 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
          alias ll='ls -al'
          alias tree='exa --tree'" \
     ogham/exa \
-  sbin'*/balena -> balena' balena-io/balena-cli 
+  sbin'*/balena -> balena' balena-io/balena-cli
 
 # - - - - - - - - - - - - - - - - - - - -
 # Git extensions
