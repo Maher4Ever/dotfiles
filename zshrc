@@ -152,16 +152,6 @@ PS1="READY >"
 zinit ice from"gh-r" as"command" atload'eval "$(starship init zsh)"'
 zinit load starship/starship
 
-# Load LS_COLORS
-zinit ice wait"0c" lucid reset \
-    atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
-            \${P}sed -i \
-            '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
-            \${P}dircolors -b LS_COLORS > c.zsh" \
-    atpull'%atclone' pick"c.zsh" nocompile'!' \
-    atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
-zinit light trapd00r/LS_COLORS
-
 # - - - - - - - - - - - - - - - - - - - -
 # Annexes
 # - - - - - - - - - - - - - - - - - - - -
@@ -181,7 +171,6 @@ zinit light-mode for \
 # - - - - - - - - - - - - - - - - - - - -
 
 # Load these plugins ASAP without Turbo. Explanation:
-# - Loading tmux first, to prevent jumps when tmux is loaded after .zshrc
 # - History plugin is loaded early (as it has some defaults) to prevent empty history stack for other plugins
 zinit lucid for \
     atinit"HIST_STAMPS=dd.mm.yyyy" \
@@ -269,6 +258,8 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
     @sharkdp/bat        \
   mv'fd* fd'               sbin'**/fd -> fd'               @sharkdp/fd        \
   mv'hyperfine* hyperfine' sbin'**/hyperfine -> hyperfine' @sharkdp/hyperfine \
+  mv'vivid* vivid'         sbin'**/vivid -> vivid' \
+    atload'export LS_COLORS="$(vivid generate snazzy)"'   @sharkdp/vivid      \
   mv'rip* ripgrep'         sbin'**/rg -> rg'  \
     atclone'cp -vf complete/_rg _rg'  \
     BurntSushi/ripgrep \
@@ -286,7 +277,7 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
          alias ll='ls -al'
          alias tree='exa --tree'" \
     ogham/exa \
-  sbin'*/balena -> balena' balena-io/balena-cli
+  sbin'*/balena -> balena' balena-io/balena-cli 
 
 # - - - - - - - - - - - - - - - - - - - -
 # Git extensions
