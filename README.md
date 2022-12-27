@@ -16,7 +16,12 @@ $ $HOME/.dotfiles/install
 Terminal setup
 --------------
 
+### GNOME Terminal
+
+- Font: [Inconsolata Nerd Font Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Inconsolata.zip)
+- Color Theme: `TokyoNightStorm` through [Dracula](https://github.com/Gogh-Co/Gogh)
+
 ### Windows Terminal
 
-- Font: [Inconsolata Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Inconsolata.zip)
+- Font: [Inconsolata Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Inconsolata.zip)
 - Color Theme: [Dracula](https://windowsterminalthemes.dev/?theme=Dracula)
