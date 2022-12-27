@@ -135,6 +135,9 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+# Create cache directory for completions (ZSH_CACHE_DIR is defined by zinit)
+[[ -d "$ZSH_CACHE_DIR/completions" ]] || mkdir -p "$ZSH_CACHE_DIR/completions"
+
 # - - - - - - - - - - - - - - - - - - - -
 # Theme
 # - - - - - - - - - - - - - - - - - - - -
