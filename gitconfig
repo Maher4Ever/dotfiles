@@ -1,6 +1,7 @@
 [user]
 	name = Maher Sallam
 	email = msallam@rocsys.com
+	signingkey = F5BB5130912F9058
 [core]
     pager = delta
 	editor = code --wait
@@ -21,3 +22,5 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[commit]
+	gpgsign = true
