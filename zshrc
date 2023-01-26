@@ -201,6 +201,7 @@ zinit wait lucid for \
   OMZL::termsupport.zsh \
   OMZP::command-not-found \
   OMZP::debian \
+  OMZP::docker \
   OMZP::dirhistory \
   OMZP::git \
   OMZP::git-extras \
@@ -245,10 +246,14 @@ zinit wait'0c' depth'3' lucid light-mode binary from'gh-r' lman lbin for \
     atclone'./just --completions zsh > _just' atpull'%atclone' \
         casey/just \
 
-zinit wait'1a' depth'1' lucid from"gh-r" as'program' for \
-  pick"delta*/delta"             dandavison/delta        \
-  pick'git-sizer'                @github/git-sizer       \
-  pick'grex'                     pemistahl/grex          \
+zinit wait'1a' depth'1' lucid from"gh-r" as'program' for    \
+  pick"delta*/delta"             dandavison/delta           \
+  pick'git-sizer'                @github/git-sizer          \
+  pick'grex'                     pemistahl/grex             \
+  pick'lazygit'                  @jesseduffield/lazygit     \
+    atload'alias lzg="lazygit"' \
+  pick'lazydocker'               @jesseduffield/lazydocker  \
+    atload'alias lzd="lazydocker"' \
   pick'shfmt'  bpick"${bpick}"   @mvdan/sh
 
 zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
@@ -259,7 +264,7 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
   mv'fd* fd'               sbin'**/fd -> fd'               @sharkdp/fd        \
   mv'hyperfine* hyperfine' sbin'**/hyperfine -> hyperfine' @sharkdp/hyperfine \
   mv'vivid* vivid'         sbin'**/vivid -> vivid' \
-    atload'export LS_COLORS="$(vivid generate snazzy)"'   @sharkdp/vivid      \
+    atload'export LS_COLORS="$(vivid generate snazzy)"'    @sharkdp/vivid     \
   mv'rip* ripgrep'         sbin'**/rg -> rg'  \
     atclone'cp -vf complete/_rg _rg'  \
     BurntSushi/ripgrep \
@@ -309,6 +314,7 @@ zinit ice atinit'\
     export NVM_SYMLINK_CURRENT="true"
     export NVM_DIR="$HOME/.nvm"
     export NVM_LAZY_LOAD=true
+    export NVM_LAZY_LOAD_EXTRA_COMMANDS=("pnpm")
     export NVM_COMPLETION=true
     '
 zinit light lukechilds/zsh-nvm
