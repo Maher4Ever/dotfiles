@@ -314,7 +314,7 @@ zinit ice atinit'\
     export NVM_SYMLINK_CURRENT="true"
     export NVM_DIR="$HOME/.nvm"
     export NVM_LAZY_LOAD=true
-    export NVM_LAZY_LOAD_EXTRA_COMMANDS=("pnpm")
+    export NVM_LAZY_LOAD_EXTRA_COMMANDS=("pnpm" "nvim")
     export NVM_COMPLETION=true
     '
 zinit light lukechilds/zsh-nvm
