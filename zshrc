@@ -263,6 +263,7 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
     @sharkdp/bat        \
   mv'fd* fd'               sbin'**/fd -> fd'               @sharkdp/fd        \
   mv'hyperfine* hyperfine' sbin'**/hyperfine -> hyperfine' @sharkdp/hyperfine \
+  mv'hexyl* hexyl'         sbin'**/hexyl -> hexyl'         @sharkdp/hexyl     \
   mv'vivid* vivid'         sbin'**/vivid -> vivid' \
     atload'export LS_COLORS="$(vivid generate snazzy)"'    @sharkdp/vivid     \
   mv'rip* ripgrep'         sbin'**/rg -> rg'  \
@@ -282,7 +283,8 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
          alias ll='ls -al'
          alias tree='exa --tree'" \
     ogham/exa \
-  sbin'*/balena -> balena' balena-io/balena-cli
+  sbin'*/balena -> balena' balena-io/balena-cli \
+  sbin'buf* -> buf' bufbuild/buf
 
 # - - - - - - - - - - - - - - - - - - - -
 # Git extensions
