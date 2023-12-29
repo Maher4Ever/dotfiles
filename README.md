@@ -27,10 +27,10 @@ Terminal setup
 
 ### GNOME Terminal
 
-- Font: [`InconsolataNerdFont-Regular.ttf`](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Inconsolata.zip)
-- Color Theme: `TokyoNightStorm` through [Dracula](https://github.com/Gogh-Co/Gogh)
+- Font: [`FireCodeNerdFont-Regular.ttf`](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip)
+- Color Theme: `Tokyo Night` through [Gogh](https://github.com/Gogh-Co/Gogh)
 
 ### Windows Terminal
 
-- Font: [`InconsolataNerdFont-Regular.ttf`](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Inconsolata.zip)
+- Font: [`FireCodeNerdFont-Regular.ttf`](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip)
 - Color Theme: [Dracula](https://windowsterminalthemes.dev/?theme=Dracula)
