@@ -1,7 +1,7 @@
 [user]
 	name = Maher Sallam
 	email = msallam@rocsys.com
-	signingkey = F5BB5130912F9058
+	signingkey = /home/msallam/.ssh/id_ed25519.pub
 [core]
     pager = delta
 	editor = code --wait
@@ -19,3 +19,5 @@
 
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
