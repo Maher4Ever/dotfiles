@@ -266,8 +266,8 @@ zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
   mv'hexyl* hexyl'         sbin'**/hexyl -> hexyl'         @sharkdp/hexyl     \
   mv'vivid* vivid'         sbin'**/vivid -> vivid' \
     atload'export LS_COLORS="$(vivid generate snazzy)"'    @sharkdp/vivid     \
-  mv'rip* ripgrep'         sbin'**/rg -> rg'  \
-    atclone'cp -vf complete/_rg _rg'  \
+  mv'rip* ripgrep'         sbin'**/rg -> rg' \
+    atclone'cp -vf ripgrep/complete/_rg _rg'               atpull"%atclone"   \
     BurntSushi/ripgrep \
   mv'nvim* nvim'           sbin"**/bin/nvim -> nvim"       bpick"${bpick}"    \
   atload'export EDITOR="nvim"
