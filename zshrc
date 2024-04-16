@@ -178,7 +178,7 @@ zinit lucid for \
 
 # Trigger-load block
  zinit wait depth'3' lucid light-mode for \
-    trigger-load'!x' svn \
+    trigger-load'!x' \
         OMZ::plugins/extract \
     trigger-load'!man' \
         ael-code/zsh-colored-man-pages \

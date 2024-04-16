@@ -5,7 +5,6 @@ Prerequisites
 -------------
 
 - Install `git`: `sudo apt install git`
-- Install `svn`: `sudo apt install subversion`
 - Install `zsh`: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 - Install `neovim`: https://github.com/neovim/neovim/blob/master/INSTALL.md
 
