@@ -21,3 +21,12 @@
 	gpgsign = true
 [gpg]
 	format = ssh
+
+[includeIf "gitdir:~/code/ngrave/"]
+    path = ~/.dotfiles/ngrave.gitconfig
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
