@@ -1,0 +1,3 @@
+[user]
+    email = maher@sallam.me
+    signingkey = /home/msallam/.ssh/id_ed25519_personal.pub

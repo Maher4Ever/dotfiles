@@ -1,12 +1,12 @@
 [user]
-	name = Maher Sallam
-	email = maher@sallam.me
-	signingkey = /home/msallam/.ssh/id_ed25519.pub
+    name = Maher Sallam
+    email = maher@sallam.me
+    signingkey = /home/msallam/.ssh/id_ed25519.pub
 [core]
-  pager = delta
-  editor = nvim
+    pager = delta
+    editor = nvim
 [credential]
-	helper = store
+    helper = store
 [interactive]
     diffFilter = delta --color-only
 [merge]
@@ -18,15 +18,18 @@
     features = side-by-side line-numbers navigate
 
 [commit]
-	gpgsign = true
+    gpgsign = true
 [gpg]
-	format = ssh
+    format = ssh
 
 [includeIf "gitdir:~/code/ngrave/"]
-    path = ~/.dotfiles/ngrave.gitconfig
+    path = ~/.dotfiles/git/ngrave.gitconfig
+[includeIf "gitdir:~/code/personal/"]
+    path = ~/.dotfiles/git/personal.gitconfig
+
 [rerere]
-	enabled = true
+    enabled = true
 [column]
-	ui = auto
+    ui = auto
 [branch]
-	sort = -committerdate
+    sort = -committerdate
