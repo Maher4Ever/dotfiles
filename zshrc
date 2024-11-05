@@ -254,7 +254,8 @@ zinit wait'1a' depth'1' lucid from"gh-r" as'program' for    \
     atload'alias lzg="lazygit"' \
   pick'lazydocker'               @jesseduffield/lazydocker  \
     atload'alias lzd="lazydocker"' \
-  pick'shfmt'  bpick"${bpick}"   @mvdan/sh
+  pick'shfmt'  bpick"${bpick}"   @mvdan/sh \
+  sbin'**/btop -> btop'          aristocratos/btop
 
 zinit wait'1b' depth'1' lucid from'gh-r' as"command" for \
   mv'bat* bat'             sbin'**/bat -> bat'          \
