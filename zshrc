@@ -210,6 +210,10 @@ zinit wait lucid for \
   OMZP::sudo \
   djui/alias-tips
 
+# Configure OMZ plugins
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
+
 # Load important plugins
 zinit wait lucid light-mode for \
         zdharma-continuum/history-search-multi-word \
