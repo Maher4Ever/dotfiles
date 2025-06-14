@@ -333,3 +333,11 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
     exec 2>&3 3>&-
     zprof > ~/zshprofile$(date +'%s')
 fi
+
+# pnpm
+export PNPM_HOME="/home/maher/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
